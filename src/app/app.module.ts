@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxLoadingButtonsModule } from 'ngx-loading-buttons';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { CustomerService } from './services/customer.service';
+import { MaterialModule } from './shared/material.module';
 @NgModule({
   declarations: [AppComponent, CustomerTableComponent],
   imports: [
@@ -20,8 +22,10 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     ReactiveFormsModule,
     NgxLoadingButtonsModule,
     NgxSpinnerModule,
+    MaterialModule,
   ],
   providers: [
+    CustomerService,
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { appearance: 'fill' },
