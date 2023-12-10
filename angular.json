@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mat-table-with-ngrx": {
+    "mat-table-ngrx": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mat-table-with-ngrx",
+            "outputPath": "dist/mat-table-ngrx",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mat-table-with-ngrx:build:production"
+              "browserTarget": "mat-table-ngrx:build:production"
             },
             "development": {
-              "browserTarget": "mat-table-with-ngrx:build:development"
+              "browserTarget": "mat-table-ngrx:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mat-table-with-ngrx:build"
+            "browserTarget": "mat-table-ngrx:build"
           }
         },
         "test": {
