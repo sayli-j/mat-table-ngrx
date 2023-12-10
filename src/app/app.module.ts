@@ -11,6 +11,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CustomerService } from './services/customer.service';
 import { MaterialModule } from './shared/material.module';
+import { StorageModule } from './store/storage.module';
 @NgModule({
   declarations: [AppComponent, CustomerTableComponent],
   imports: [
@@ -23,6 +24,7 @@ import { MaterialModule } from './shared/material.module';
     NgxLoadingButtonsModule,
     NgxSpinnerModule,
     MaterialModule,
+    StorageModule,
   ],
   providers: [
     CustomerService,
